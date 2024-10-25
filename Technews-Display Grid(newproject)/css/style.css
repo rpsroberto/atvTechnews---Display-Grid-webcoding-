@@ -1,0 +1,149 @@
+:root{
+    --amarelo: #BFF009;
+    --cinza: #868585;
+    --preto: #1e1e1e;
+    --branco: #ffffff;
+    --cinzaClaro: #F2F2F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+section div:hover{
+    background-color: black;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--branco);
+}
+
+header{
+    background-color: var(--cinzaClaro);
+    padding: 20px 0;
+}
+
+header section{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 90%;
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+header img{
+    justify-self: start;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px;
+    justify-content: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 500;
+}
+
+header section > a{
+    justify-self: end;
+    color: var(--preto);
+    background-color: var(--amarelo);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main{
+    padding: 40px 0;
+}
+
+main section{
+    width: 90%;
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+main header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main header small{
+    font-size: 12px;
+    color: var(--preto);
+    background-color: var(--amarelo) ;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+main header h1{
+    font-size: 36px;
+    color: var(--preto);
+    margin: 10px 0;
+}
+
+main header p{
+    font-size: 18px;
+    color: var(--cinza);
+}
+
+.grid-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--cinzaClaro);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card figure{
+    margin-bottom: 16px;
+}
+
+.card figure img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--preto);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card p{
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--preto);
+    color: var(--cinza);
+    padding: 46px 0;
+}
